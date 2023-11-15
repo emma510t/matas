@@ -1,12 +1,8 @@
 import { Card } from "antd";
 
-export default function CardX(props, { children }) {
+export default function CardX({ children, name }) {
   return (
-    <Card
-      hoverable
-      style={{ width: 240 }}
-      cover={<img alt="example" src={props.name} />}
-    >
+    <Card hoverable style={{ width: 240 }} cover={<img alt="example" src={name} />}>
       {children}
     </Card>
   );

@@ -21,7 +21,7 @@ export default function FormX({ percent }) {
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">Vælg 1</p>
+          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter et produkt i</p>
           <p className="text-xs ">Vælg 1</p>
           <div className="grid grid-cols-2 gap-1.5 mt-2">
             <Button className="flex justify-center items-center text-base" value="a">
@@ -45,7 +45,7 @@ export default function FormX({ percent }) {
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
           <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex justify-center">
-            <Button className="text-base" onClick={() => {}}>
+            <Button className="text-base bg-matas-blue text-white" onClick={() => {}}>
               Se dit resultat
             </Button>
           </div>

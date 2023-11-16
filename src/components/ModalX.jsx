@@ -6,6 +6,7 @@ import FormX from "./FormX";
 export default function ModalX() {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
+  const [percent, setPercent] = useState(0);
   const showModal = () => {
     setOpen(true);
   };
@@ -14,7 +15,6 @@ export default function ModalX() {
     setOpen(false);
   };
 
-  const [percent, setPercent] = useState(0);
   const increase = () => {
     setPercent((prevPercent) => {
       const newPercent = prevPercent + 50;
@@ -82,7 +82,7 @@ export default function ModalX() {
         >
           <Progress percent={percent} />
         </div>
-        <FormX></FormX>
+        <FormX percent={percent}></FormX>
       </Modal>
     </>
   );

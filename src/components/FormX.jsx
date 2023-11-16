@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { Checkbox, Radio } from "antd";
 
-export default function FormX() {
-  const [quiz, updateQuiz] = useState(1);
-
-  function updater() {
-    updateQuiz((o) => o + 1);
-  }
-
+export default function FormX({ percent }) {
   const content = () => {
-    if (quiz === 1) {
+    if (percent === 0) {
       return (
         <>
           <Checkbox>Lotion</Checkbox>
@@ -18,7 +12,7 @@ export default function FormX() {
           <Checkbox>Mousse</Checkbox>
         </>
       );
-    } else if (quiz === 2) {
+    } else if (percent === 50) {
       return (
         <>
           <Radio.Group buttonStyle="solid">

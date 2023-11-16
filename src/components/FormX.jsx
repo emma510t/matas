@@ -6,19 +6,24 @@ export default function FormX({ percent }) {
     if (percent === 0) {
       return (
         <>
-          <p className="uppercase text-xs">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2">Jeg leder efter</p>
+          <p className="uppercase text-xs leading-7">Hudpleje</p>
+          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter</p>
           <p className="text-xs ">Vælg 1 og maks. 3</p>
-          <Checkbox className=" text-base">Lotion</Checkbox>
-          <Checkbox className=" text-base">Olie</Checkbox>
-          <Checkbox className=" text-base">Serum</Checkbox>
-          <Checkbox className=" text-base">Mousse</Checkbox>
+          <div className="flex flex-col mt-2 gap-2">
+            <Checkbox className=" text-base">Lotion</Checkbox>
+            <Checkbox className=" text-base">Olie</Checkbox>
+            <Checkbox className=" text-base">Serum</Checkbox>
+            <Checkbox className=" text-base">Mousse</Checkbox>
+          </div>
         </>
       );
     } else if (percent === 50) {
       return (
         <>
-          <div className="grid grid-cols-2 gap-1.5">
+          <p className="uppercase text-xs leading-7">Hudpleje</p>
+          <p className="font-semibold text-xl mb-2 leading-5">Vælg 1</p>
+          <p className="text-xs ">Vælg 1</p>
+          <div className="grid grid-cols-2 gap-1.5 mt-2">
             <Button className="flex justify-center items-center text-base" value="a">
               Nyheder
             </Button>
@@ -51,7 +56,7 @@ export default function FormX({ percent }) {
 
   return (
     <>
-      <form className="flex flex-col">{content()}</form>
+      <form className="flex flex-col gap-1">{content()}</form>
     </>
   );
 }

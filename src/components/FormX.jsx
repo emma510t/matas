@@ -6,6 +6,9 @@ export default function FormX({ percent }) {
     if (percent === 0) {
       return (
         <>
+          <p className="uppercase text-xs">Hudpleje</p>
+          <p className="font-semibold text-xl mb-2">Jeg leder efter</p>
+          <p className="text-xs ">Vælg 1 og maks. 3</p>
           <Checkbox className=" text-base">Lotion</Checkbox>
           <Checkbox className=" text-base">Olie</Checkbox>
           <Checkbox className=" text-base">Serum</Checkbox>
@@ -47,10 +50,7 @@ export default function FormX({ percent }) {
       return (
         <>
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
-          <p className="text-base mb-4">
-            Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk
-            hudpleje, hårpleje og make-up.
-          </p>
+          <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex justify-center">
             <Button className="text-base" onClick={() => {}}>
               Se dit resultat

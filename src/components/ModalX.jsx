@@ -35,9 +35,11 @@ export default function ModalX() {
   };
   return (
     <>
-      <Button type="primary" onClick={showModal}>
-        Prøv test
-      </Button>
+      <div className="flex justify-center">
+        <Button type="text" onClick={showModal}>
+          <div className="underline font-semibold">TAG TESTEN</div>
+        </Button>
+      </div>
       <Modal
         open={open}
         onCancel={handleCancel}

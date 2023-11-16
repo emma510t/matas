@@ -16,16 +16,28 @@ export default function FormX({ percent }) {
       return (
         <>
           <div className="grid grid-cols-2 gap-1.5">
-            <Button className="flex justify-center items-center text-base" value="a">
+            <Button
+              className="flex justify-center items-center text-base"
+              value="a"
+            >
               Nyheder
             </Button>
-            <Button className="flex justify-center items-center text-base" value="b">
+            <Button
+              className="flex justify-center items-center text-base"
+              value="b"
+            >
               Bestseller
             </Button>
-            <Button className="flex justify-center items-center text-base" value="c">
+            <Button
+              className="flex justify-center items-center text-base"
+              value="c"
+            >
               Beijing
             </Button>
-            <Button className="flex justify-center items-center text-base" value="d">
+            <Button
+              className="flex justify-center items-center text-base"
+              value="d"
+            >
               Chengdu
             </Button>
           </div>

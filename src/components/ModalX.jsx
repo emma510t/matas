@@ -40,7 +40,6 @@ export default function ModalX() {
       </Button>
       <Modal
         open={open}
-        title="Title"
         onCancel={handleCancel}
         footer={[
           <Button key="back" type="text" onClick={decline}>
@@ -80,7 +79,7 @@ export default function ModalX() {
             marginBottom: 10,
           }}
         >
-          <Progress percent={percent} />
+          <Progress className="pt-7" percent={percent} />
         </div>
         <FormX percent={percent}></FormX>
       </Modal>

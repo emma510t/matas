@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Checkbox, Radio } from "antd";
+import { Checkbox, Radio, Button } from "antd";
 
 export default function FormX({ percent }) {
   const content = () => {
@@ -24,7 +24,20 @@ export default function FormX({ percent }) {
         </>
       );
     } else {
-      return <></>;
+      return (
+        <>
+          <p className="font-semibold text-xl mb-2">Materialistens tip</p>
+          <p className="text-base mb-4">
+            Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk
+            hudpleje, hårpleje og make-up.
+          </p>
+          <div className="flex justify-center">
+            <Button className="text-base" onClick={() => {}}>
+              Se dit resultat
+            </Button>
+          </div>
+        </>
+      );
     }
   };
 

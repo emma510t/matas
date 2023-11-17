@@ -4,7 +4,7 @@ import ModalX from "@/components/ModalX";
 export default function Home() {
   return (
     <>
-      <CardX>
+      <CardX name="/img/oekologisk-hudpleje.jpg">
         <div className="flex flex-col items-center">
           <p className="text-xs">FIND DIN FAVORIT</p>
           <p className="font-bold text-lg">Økologisk hudpleje</p>

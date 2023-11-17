@@ -14,6 +14,13 @@ export default function Home() {
 
             // Alias Token
             colorBgContainer: "#DEE1E9",
+
+            colorSuccess: "#000000",
+          },
+          components: {
+            Progress: {
+              defaultColor: "#284461",
+            },
           },
         }}
       >

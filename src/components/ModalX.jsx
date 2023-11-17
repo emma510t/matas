@@ -92,7 +92,7 @@ export default function ModalX() {
             marginBottom: 10,
           }}
         >
-          <Progress className="pt-7" percent={percent} strokeColor="#284461" />
+          <Progress className="pt-7" percent={percent} />
         </div>
         <FormX percent={percent}></FormX>
       </Modal>

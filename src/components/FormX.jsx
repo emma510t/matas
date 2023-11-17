@@ -7,7 +7,9 @@ export default function FormX({ percent }) {
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter</p>
+          <p className="font-semibold text-xl mb-2 leading-5">
+            Jeg leder efter
+          </p>
           <p className="text-xs ">Vælg 1 og maks. 3</p>
           <div className="flex flex-col mt-2 gap-2">
             <Checkbox className=" text-base">Lotion</Checkbox>
@@ -21,19 +23,36 @@ export default function FormX({ percent }) {
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter et produkt i</p>
+          <p className="font-semibold text-xl mb-2 leading-5">
+            Jeg leder efter et produkt i
+          </p>
           <p className="text-xs ">Vælg 1</p>
-          <Radio.Group buttonStyle="solid" className="grid grid-cols-2 gap-1.5 mt-2">
-            <Radio.Button value="a" className="flex justify-center items-center text-base rounded">
+          <Radio.Group
+            buttonStyle="solid"
+            className="grid grid-cols-2 gap-1.5 mt-2"
+          >
+            <Radio.Button
+              value="a"
+              className="flex justify-center items-center text-base rounded"
+            >
               Hangzhou
             </Radio.Button>
-            <Radio.Button value="b" className="flex justify-center items-center text-base rounded">
+            <Radio.Button
+              value="b"
+              className="flex justify-center items-center text-base rounded"
+            >
               Shanghai
             </Radio.Button>
-            <Radio.Button value="c" className="flex justify-center items-center text-base rounded">
+            <Radio.Button
+              value="c"
+              className="flex justify-center items-center text-base rounded"
+            >
               Beijing
             </Radio.Button>
-            <Radio.Button value="d" className="flex justify-center items-center text-base rounded">
+            <Radio.Button
+              value="d"
+              className="flex justify-center items-center text-base rounded"
+            >
               Chengdu
             </Radio.Button>
           </Radio.Group>
@@ -43,9 +62,16 @@ export default function FormX({ percent }) {
       return (
         <>
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
-          <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
+          <p className="text-base mb-4">
+            Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk
+            hudpleje, hårpleje og make-up.
+          </p>
           <div className="flex justify-center">
-            <Button type="primary" className="text-base bg-matas-blue" onClick={() => {}}>
+            <Button
+              type="primary"
+              className="text-base bg-matas-blue"
+              onClick={() => {}}
+            >
               Se dit resultat
             </Button>
           </div>

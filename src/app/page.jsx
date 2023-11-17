@@ -15,7 +15,7 @@ export default function Home() {
             // Alias Token
             colorBgContainer: "#DEE1E9",
 
-            colorSuccess: "#000000",
+            colorSuccess: "#558A6B",
           },
           components: {
             Progress: {

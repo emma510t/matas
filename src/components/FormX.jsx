@@ -45,7 +45,7 @@ export default function FormX({ percent }) {
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
           <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex justify-center">
-            <Button className="text-base bg-matas-blue text-white" onClick={() => {}}>
+            <Button type="primary" className="text-base bg-matas-blue" onClick={() => {}}>
               Se dit resultat
             </Button>
           </div>

@@ -23,20 +23,20 @@ export default function FormX({ percent }) {
           <p className="uppercase text-xs leading-7">Hudpleje</p>
           <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter et produkt i</p>
           <p className="text-xs ">Vælg 1</p>
-          <div className="grid grid-cols-2 gap-1.5 mt-2">
-            <Button className="flex justify-center items-center text-base" value="a">
-              Nyheder
-            </Button>
-            <Button className="flex justify-center items-center text-base" value="b">
-              Bestseller
-            </Button>
-            <Button className="flex justify-center items-center text-base" value="c">
+          <Radio.Group buttonStyle="solid" className="grid grid-cols-2 gap-1.5 mt-2">
+            <Radio.Button value="a" className="flex justify-center items-center text-base rounded">
+              Hangzhou
+            </Radio.Button>
+            <Radio.Button value="b" className="flex justify-center items-center text-base rounded">
+              Shanghai
+            </Radio.Button>
+            <Radio.Button value="c" className="flex justify-center items-center text-base rounded">
               Beijing
-            </Button>
-            <Button className="flex justify-center items-center text-base" value="d">
+            </Radio.Button>
+            <Radio.Button value="d" className="flex justify-center items-center text-base rounded">
               Chengdu
-            </Button>
-          </div>
+            </Radio.Button>
+          </Radio.Group>
         </>
       );
     } else {
@@ -45,7 +45,7 @@ export default function FormX({ percent }) {
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
           <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex justify-center">
-            <Button className="text-base bg-matas-blue text-white" onClick={() => {}}>
+            <Button type="primary" className="text-base bg-matas-blue" onClick={() => {}}>
               Se dit resultat
             </Button>
           </div>

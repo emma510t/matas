@@ -24,13 +24,15 @@ export default function Home() {
           },
         }}
       >
-        <CardX name="/img/oekologisk-hudpleje.jpg">
-          <div className="flex flex-col items-center">
-            <p className="text-xs">FIND DIN FAVORIT</p>
-            <p className="font-bold text-lg">Økologisk hudpleje</p>
-          </div>
-          <ModalX></ModalX>
-        </CardX>
+        <section className="m-4">
+          <CardX name="/img/oekologisk-hudpleje.jpg">
+            <div className="flex flex-col items-center">
+              <p className="text-xs">FIND DIN FAVORIT</p>
+              <p className="font-bold text-lg">Økologisk hudpleje</p>
+            </div>
+            <ModalX></ModalX>
+          </CardX>
+        </section>
       </ConfigProvider>
     </>
   );

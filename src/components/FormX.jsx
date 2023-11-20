@@ -6,6 +6,7 @@ export default function FormX({
   productTypes,
   setProductTypes,
   productTypeError,
+  setProductTypeError,
   productCategory,
   setProductCategory,
 }) {
@@ -50,7 +51,7 @@ export default function FormX({
           <div className="flex flex-col mt-2 gap-2">
             {checkboxArray.map((box) => (
               <Checkbox
-                key="buh"
+                key={box.name}
                 className="text-base"
                 checked={productTypes.includes(`${box.name}`)}
                 onChange={() => {
@@ -84,11 +85,11 @@ export default function FormX({
           >
             {radioArray.map((radio) => (
               <Radio.Button
-                key="buh"
+                key={radio.name}
                 value={radio.name}
                 className="flex justify-center items-center text-base rounded"
-                checked={productCategory.includes(`${radio.name}`)}
-                onChange={() => {
+                /*                 checked={productCategory.includes(`${radio.name}`)}
+                 */ onChange={() => {
                   if (productCategory.includes(`${radio.name}`)) {
                     setProductCategory((o) =>
                       o.filter((category) => category != `${radio.name}`)

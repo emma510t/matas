@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import { Checkbox, Radio, Button } from "antd";
 
-export default function FormX({
-  percent,
-  productTypes,
-  setProductTypes,
-  productTypeError,
-  productCategory,
-  setProductCategory,
-}) {
+export default function FormX({ percent, productTypes, setProductTypes, productTypeError, productCategory, setProductCategory }) {
   const checkboxArray = [
     {
       name: "Lotion",
@@ -42,9 +35,7 @@ export default function FormX({
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">
-            Jeg leder efter
-          </p>
+          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter</p>
           <p className="text-xs ">Vælg 1 og maks. 3</p>
           {productTypeError && <p>{productTypeError}</p>}
           <div className="flex flex-col mt-2 gap-2">
@@ -55,9 +46,7 @@ export default function FormX({
                 checked={productTypes.includes(`${box.name}`)}
                 onChange={() => {
                   if (productTypes.includes(`${box.name}`)) {
-                    setProductTypes((o) =>
-                      o.filter((product) => product != `${box.name}`)
-                    );
+                    setProductTypes((o) => o.filter((product) => product != `${box.name}`));
                   } else {
                     setProductTypes((o) => o.concat(`${box.name}`));
                   }
@@ -73,15 +62,10 @@ export default function FormX({
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">
-            Jeg leder efter et produkt i
-          </p>
+          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter et produkt i</p>
           <p className="text-xs ">Vælg 1</p>
           {productTypeError && <p>{productTypeError}</p>}
-          <Radio.Group
-            buttonStyle="solid"
-            className="grid grid-cols-2 gap-1.5 mt-2"
-          >
+          <Radio.Group buttonStyle="solid" className="grid grid-cols-2 gap-1.5 mt-2">
             {radioArray.map((radio) => (
               <Radio.Button
                 key="buh"
@@ -90,9 +74,7 @@ export default function FormX({
                 checked={productCategory.includes(`${radio.name}`)}
                 onChange={() => {
                   if (productCategory.includes(`${radio.name}`)) {
-                    setProductCategory((o) =>
-                      o.filter((category) => category != `${radio.name}`)
-                    );
+                    setProductCategory((o) => o.filter((category) => category != `${radio.name}`));
                   } else {
                     setProductCategory((o) => o.concat(`${radio.name}`));
                   }
@@ -108,16 +90,9 @@ export default function FormX({
       return (
         <>
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
-          <p className="text-base mb-4">
-            Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk
-            hudpleje, hårpleje og make-up.
-          </p>
+          <p className="text-base mb-4">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex justify-center">
-            <Button
-              type="primary"
-              className="text-base bg-matas-blue"
-              onClick={() => {}}
-            >
+            <Button type="primary" className="text-base bg-matas-blue rounded shadow-matas-blue" onClick={() => {}}>
               Se dit resultat
             </Button>
           </div>

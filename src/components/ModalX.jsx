@@ -112,7 +112,6 @@ export default function ModalX() {
           productCategory={productCategory}
           setProductCategory={setProductCategory}
           productTypeError={productTypeError}
-          setProductTypeError={setProductTypeError}
         ></FormX>
       </Modal>
     </>

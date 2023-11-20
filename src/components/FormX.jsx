@@ -6,7 +6,6 @@ export default function FormX({
   productTypes,
   setProductTypes,
   productTypeError,
-  setProductTypeError,
   productCategory,
   setProductCategory,
 }) {
@@ -116,7 +115,7 @@ export default function FormX({
           <div className="flex justify-center">
             <Button
               type="primary"
-              className="text-base bg-matas-blue"
+              className="text-base bg-matas-blue rounded shadow-matas-blue"
               onClick={() => {}}
             >
               Se dit resultat

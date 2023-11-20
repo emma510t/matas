@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import { Button, Modal, Progress } from "antd";
 import FormX from "./FormX";
 
-export default function ModalX() {
+export default function ModalX({ setPageView }) {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [percent, setPercent] = useState(0);
   const [productTypes, setProductTypes] = useState([]);
   const [productCategory, setProductCategory] = useState([]);
   const [productTypeError, setProductTypeError] = useState("");
+  const resultArray = productTypes.concat(productCategory);
+
   const showModal = () => {
     setOpen(true);
   };
@@ -112,6 +114,9 @@ export default function ModalX() {
           productCategory={productCategory}
           setProductCategory={setProductCategory}
           productTypeError={productTypeError}
+          setOpen={setOpen}
+          resultArray={resultArray}
+          setPageView={setPageView}
         ></FormX>
       </Modal>
     </>

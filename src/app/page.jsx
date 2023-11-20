@@ -1,5 +1,4 @@
-import CardX from "@/components/CardX";
-import ModalX from "@/components/ModalX";
+import ProductView from "@/components/ProductView";
 import { ConfigProvider } from "antd";
 
 export default function Home() {
@@ -24,15 +23,9 @@ export default function Home() {
           },
         }}
       >
-        <section className="m-4">
-          <CardX name="/img/oekologisk-hudpleje.jpg">
-            <div className="flex flex-col items-center">
-              <p className="text-xs">FIND DIN FAVORIT</p>
-              <p className="font-bold text-lg">Økologisk hudpleje</p>
-            </div>
-            <ModalX></ModalX>
-          </CardX>
-        </section>
+        <main>
+          <ProductView id="overview" />
+        </main>
       </ConfigProvider>
     </>
   );

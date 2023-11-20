@@ -8,6 +8,8 @@ export default function FormX({
   productTypeError,
   productCategory,
   setProductCategory,
+  resultArray,
+  setPageView,
 }) {
   const checkboxArray = [
     {
@@ -116,7 +118,12 @@ export default function FormX({
             <Button
               type="primary"
               className="text-base bg-matas-blue rounded shadow-matas-blue"
-              onClick={() => {}}
+              onClick={() => {
+                console.log(resultArray);
+                setPageView((page) => {
+                  return page + 1;
+                });
+              }}
             >
               Se dit resultat
             </Button>

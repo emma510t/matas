@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       "matas-blue": "#002643",
+      "matas-white": "#F7F5F5",
       white: "#ffffff",
     },
     extend: {

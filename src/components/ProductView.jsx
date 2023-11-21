@@ -12,7 +12,7 @@ function ProductView() {
 
   if (pageView === 1) {
     return (
-      <section>
+      <section className="layoutView">
         <CardX name="/img/oekologisk-hudpleje.jpg">
           <div className="flex flex-col items-center">
             <p className="text-xs">FIND DIN FAVORIT</p>
@@ -56,7 +56,7 @@ function ProductView() {
             />
           </svg>
         </Button>
-        <div>
+        <div className="layoutView">
           <p>Hello, Hello</p>
         </div>
       </section>

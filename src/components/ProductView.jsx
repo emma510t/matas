@@ -14,21 +14,64 @@ function ProductView() {
   if (pageView === 1) {
     return (
       <section className="layoutView">
-        <CardX name="/img/oekologisk-hudpleje.jpg">
-          <div className="flex flex-col items-center">
-            <p className="text-xs">FIND DIN FAVORIT</p>
-            <p className="font-bold text-lg">Økologisk hudpleje</p>
-          </div>
-          <ModalX
-            productTypes={productTypes}
-            productCategory={productCategory}
-            setProductTypes={setProductTypes}
-            setProductCategory={setProductCategory}
-            resultArray={resultArray}
-            setPageView={setPageView}
-          ></ModalX>
-        </CardX>
-        <ProductCardX></ProductCardX>
+        <div className="grid-cols-3 grid gap-3">
+          <CardX name="/img/oekologisk-hudpleje.jpg">
+            <div className="flex flex-col items-center">
+              <p className="text-xs">FIND DIN FAVORIT</p>
+              <p className="font-bold text-lg">Økologisk hudpleje</p>
+            </div>
+            <ModalX
+              productTypes={productTypes}
+              productCategory={productCategory}
+              setProductTypes={setProductTypes}
+              setProductCategory={setProductCategory}
+              resultArray={resultArray}
+              setPageView={setPageView}
+            ></ModalX>
+          </CardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+          <ProductCardX>
+            <div className="flex flex-col items-center">
+              <p className="font-bold text-lg">Ecooking</p>
+              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+            </div>
+          </ProductCardX>
+        </div>
       </section>
     );
   } else {

@@ -48,8 +48,7 @@ export default function FormX({
           <p className="font-semibold text-xl mb-2 leading-5">
             Jeg leder efter
           </p>
-          <p className="text-xs ">Vælg 1 og maks. 3</p>
-          {productTypeError && <p>{productTypeError}</p>}
+          <p className={productTypeError + " text-xs"}>Vælg 1 og maks. 3</p>
           <div className="flex flex-col mt-2 gap-2">
             {checkboxArray.map((box) => (
               <Checkbox
@@ -79,8 +78,7 @@ export default function FormX({
           <p className="font-semibold text-xl mb-2 leading-5">
             Jeg leder efter et produkt i
           </p>
-          <p className="text-xs ">Vælg 1</p>
-          {productTypeError && <p>{productTypeError}</p>}
+          <p className={productTypeError + " text-xs"}>Vælg 1</p>
           <Radio.Group
             buttonStyle="solid"
             className="grid grid-cols-2 gap-1.5 mt-2"
@@ -120,11 +118,13 @@ export default function FormX({
               type="primary"
               className="text-base bg-matas-blue rounded shadow-matas-blue"
               onClick={() => {
-                console.log(resultArray);
                 handleCancel();
-                setPageView((page) => {
-                  return page + 1;
-                });
+
+                setTimeout(() => {
+                  setPageView((page) => {
+                    return page + 1;
+                  });
+                }, 200);
               }}
             >
               Se dit resultat

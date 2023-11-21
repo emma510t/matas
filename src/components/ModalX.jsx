@@ -26,12 +26,12 @@ export default function ModalX({ setPageView }) {
         setProductTypeError("");
         return 50;
       } else if (prevPercent === 0) {
-        setProductTypeError("Du skal vælge mindst 1");
+        setProductTypeError("form_error");
       } else if (prevPercent === 50 && productCategory.length > 0) {
         setProductTypeError("");
         return 100;
       } else if (prevPercent === 50) {
-        setProductTypeError("Du skal vælge 1");
+        setProductTypeError("form_error");
       }
       return prevPercent;
     });

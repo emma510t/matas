@@ -38,9 +38,9 @@ function ProductView() {
           onClick={() => {
             setProductTypes([]);
             setProductCategory([]);
-            /* setPageView((page) => {
+            setPageView((page) => {
               return page - 1;
-            }); */
+            });
           }}
         >
           <svg

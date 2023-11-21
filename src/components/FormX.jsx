@@ -10,6 +10,7 @@ export default function FormX({
   setProductCategory,
   resultArray,
   setPageView,
+  handleCancel,
 }) {
   const checkboxArray = [
     {
@@ -120,6 +121,7 @@ export default function FormX({
               className="text-base bg-matas-blue rounded shadow-matas-blue"
               onClick={() => {
                 console.log(resultArray);
+                handleCancel();
                 setPageView((page) => {
                   return page + 1;
                 });

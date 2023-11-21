@@ -114,7 +114,7 @@ export default function ModalX({ setPageView }) {
           productCategory={productCategory}
           setProductCategory={setProductCategory}
           productTypeError={productTypeError}
-          setOpen={setOpen}
+          handleCancel={handleCancel}
           resultArray={resultArray}
           setPageView={setPageView}
         ></FormX>

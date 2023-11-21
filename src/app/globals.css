@@ -26,3 +26,7 @@ main {
   place-content: center;
   height: 100vh;
 }
+
+.form_error {
+  color: red;
+}

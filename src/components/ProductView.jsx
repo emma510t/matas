@@ -5,6 +5,12 @@ import ModalX from "@/components/ModalX";
 import { useState } from "react";
 import { Button } from "antd";
 
+async function fetchFunc() {
+  const res = await fetch("/public/products.json");
+
+  const data = await res.json();
+}
+
 function ProductView() {
   const [pageView, setPageView] = useState(1);
   const [productTypes, setProductTypes] = useState([]);
@@ -31,44 +37,9 @@ function ProductView() {
           </CardX>
           <ProductCardX>
             <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
-            </div>
-          </ProductCardX>
-          <ProductCardX>
-            <div className="flex flex-col items-center">
-              <p className="font-bold text-lg">Ecooking</p>
-              <p className="text-xs">Dagcreme Parfumefri50 ml</p>
+              <p className="font-bold text-lg">{data.name}</p>
+              <p className="text-xs">{data.brand}</p>
+              <p className="text-xs">{data.price}</p>
             </div>
           </ProductCardX>
         </div>

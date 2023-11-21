@@ -3,14 +3,18 @@ import React, { useState } from "react";
 import { Button, Modal, Progress } from "antd";
 import FormX from "./FormX";
 
-export default function ModalX({ setPageView }) {
+export default function ModalX({
+  setPageView,
+  resultArray,
+  productTypes,
+  productCategory,
+  setProductCategory,
+  setProductTypes,
+}) {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [percent, setPercent] = useState(0);
-  const [productTypes, setProductTypes] = useState([]);
-  const [productCategory, setProductCategory] = useState([]);
   const [productTypeError, setProductTypeError] = useState("");
-  const resultArray = productTypes.concat(productCategory);
 
   const showModal = () => {
     setOpen(true);

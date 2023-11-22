@@ -169,5 +169,113 @@
     "price": "236,21 kr.",
     "category": "Tilbud",
     "form": "Mousse"
+  },
+  {
+    "id": 959240,
+    "name": "Estée Lauder DayWear Anti-Oxidant Cream SPF 15 Normal/Combineret, 50 ml",
+    "image": "https://images.matas.dk/Assets_v3/400001-500000/483001-484000/483501-483600/483508/product_v1_x2.jpg",
+    "brand": "Estée Lauder",
+    "price": "534,95 kr.",
+    "category": "Tilbud",
+    "form": "Serum"
+  },
+  {
+    "id": 885138,
+    "name": "Biotherm Day Control Deo Spray 150 ml",
+    "image": "https://images.matas.dk/Assets_v3/600001-700000/622001-623000/622601-622700/622686/product_v1_x2.jpg",
+    "brand": "Biotherm",
+    "price": "129,95 kr.",
+    "category": "Nyheder",
+    "form": "Olie"
+  },
+  {
+    "id": 730653,
+    "name": "Matas Natur Aloe Vera & E-vitamin Bodylotion 400 ml",
+    "image": "https://images.matas.dk/Assets_v3/300001-400000/358001-359000/358501-358600/358576/product_v1_x2.jpg",
+    "brand": "Matas Natur",
+    "price": "99,95 kr.",
+    "category": "Tilbud",
+    "form": "Lotion"
+  },
+  {
+    "id": 697474,
+    "name": "Biotherm Blue Therapy Multi-Defender Cream SPF 25 Normal/Combination Skin 50 ml",
+    "image": "https://images.matas.dk/Assets_v3/700001-800000/763001-764000/763301-763400/763373/product_v1_x2.jpg",
+    "brand": "Biotherm",
+    "price": "599,95 kr.",
+    "category": "Bestseller",
+    "form": "Mousse"
+  },
+  {
+    "id": 650031,
+    "name": "Clarins Radiance-Plus Golden Glow Booster 15 ml",
+    "image": "https://images.matas.dk/encode/3380810449068_20231011095744.jpg",
+    "brand": "Clarins",
+    "price": "239,95 kr.",
+    "category": "Børn",
+    "form": "Serum"
+  },
+  {
+    "id": 816441,
+    "name": "Estée Lauder Daywear Skincare Gaveæske",
+    "image": "https://images.matas.dk/encode/887167667082.jpg",
+    "brand": "Estée Lauder",
+    "price": "534,95 kr.",
+    "category": "Tilbud",
+    "form": "Mousse"
+  },
+  {
+    "id": 673301,
+    "name": "Pudderdåserne.dk Alt i en Creme 150 ml",
+    "image": "https://images.matas.dk/Assets_v3/500001-600000/519001-520000/519101-519200/519121/product_v1_x2.jpg",
+    "brand": "Pudderdåserne.dk",
+    "price": "119,95 kr.",
+    "category": "Nyheder",
+    "form": "Olie"
+  },
+  {
+    "id": 992337,
+    "name": "Beauté Pacifique D-Force Anti-Age Daycreme 50 ml",
+    "image": "https://images.matas.dk/Assets_v3/500001-600000/551001-552000/551001-551100/551045/product_v1_x2.jpg",
+    "brand": "Beauté Pacifique",
+    "price": "599,95 kr.",
+    "category": "Nyheder",
+    "form": "Lotion"
+  },
+  {
+    "id": 727358,
+    "name": "Rudolph Care Moisture Delight 50 ml",
+    "image": "https://images.matas.dk/Assets_v3/500001-600000/591001-592000/591001-591100/591067/product_v1_x2.jpg",
+    "brand": "Rudolph Care",
+    "price": "414,95 kr.",
+    "category": "Børn",
+    "form": "Olie"
+  },
+  {
+    "id": 921429,
+    "name": "Urtegaarden Ricinusolie ØKO 100 ml",
+    "image": "https://images.matas.dk/Assets_v3/500001-600000/520001-521000/520401-520500/520404/product_v1_x2.jpg",
+    "brand": "Urtegaarden",
+    "price": "55,95 kr.",
+    "category": "Tilbud",
+    "form": "Serum"
+  },
+  {
+    "id": 657647,
+    "name": "Matas Striber Men Deo Spray 150 ml",
+    "image": "https://images.matas.dk/Assets_v3/200001-300000/245001-246000/245701-245800/245718/product_v1_x2.jpg",
+    "brand": "Matas Striber",
+    "price": "39,95 kr.",
+    "category": "Bestseller",
+    "form": "Mousse"
+  },
+  {
+    "id": 818280,
+    "name": "Ecooking Daily Routine Gaveæske",
+    "image": "https://images.matas.dk/encode/818280.jpg",
+    "brand": "Ecooking",
+    "price": "449,95 kr.",
+    "category": "Bestseller",
+    "form": "Lotion"
   }
 ]

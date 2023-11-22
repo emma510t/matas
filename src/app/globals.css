@@ -50,3 +50,7 @@
 .checked {
   background-color: #284461;
 }
+
+.menu_btn {
+  cursor: pointer;
+}

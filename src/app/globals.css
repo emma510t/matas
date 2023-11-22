@@ -28,4 +28,5 @@
 
 .form_error {
   color: red;
+  text-decoration: underline;
 }

@@ -24,6 +24,7 @@ function ProductView() {
       setProducts(data);
     };
     x();
+    x;
   }, []);
   if (pageView === 1) {
     return (
@@ -57,7 +58,7 @@ function ProductView() {
     );
   } else {
     return (
-      <section>
+      <>
         <Button
           key="back"
           type="text"
@@ -82,10 +83,28 @@ function ProductView() {
             />
           </svg>
         </Button>
-        <div className="layoutView">
-          <p>Hello, Hello</p>
-        </div>
-      </section>
+        <section className="layoutView">
+          <div className="grid-cols-3 grid gap-3">
+            {products
+              .filter((data) => {
+                const formMatches = productTypes.some((r) => r === data.form);
+                const categoryMatches = productCategory.some(
+                  (r) => r === data.category
+                );
+                return formMatches && categoryMatches; // Check for both form and category match
+              })
+              .map((data) => (
+                <ProductCardX image={data.image} key={data.id}>
+                  <div className="flex flex-col items-center">
+                    <p className="font-bold text-lg">{data.name}</p>
+                    <p className="text-xs">{data.brand}</p>
+                    <p className="text-xs">{data.price}</p>
+                  </div>
+                </ProductCardX>
+              ))}
+          </div>
+        </section>
+      </>
     );
   }
 }

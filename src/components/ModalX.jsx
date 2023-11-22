@@ -26,7 +26,11 @@ export default function ModalX({
 
   const increase = () => {
     setPercent((prevPercent) => {
-      if (prevPercent === 0 && productTypes.length > 0) {
+      if (
+        prevPercent === 0 &&
+        productTypes.length > 0 &&
+        productTypes.length < 4
+      ) {
         setProductTypeError("");
         return 50;
       } else if (prevPercent === 0) {

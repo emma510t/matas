@@ -60,6 +60,7 @@ function ProductView() {
     return (
       <>
         <Button
+          className="ml-6"
           key="back"
           type="text"
           onClick={() => {

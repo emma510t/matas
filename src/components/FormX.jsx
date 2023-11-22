@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Checkbox, Radio, Button } from "antd";
 
-export default function FormX({ percent, productTypes, setProductTypes, productTypeError, productCategory, setProductCategory, resultArray, setPageView, handleCancel }) {
+export default function FormX({ percent, productTypes, setProductTypes, productTypeError, productCategory, setProductCategory, resultArray, setPageView, handleCancel, handleResult }) {
   const [count, setCount] = useState(0);
   useEffect(() => {
     let intervalId;
@@ -90,8 +90,10 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
                 /*                 checked={productCategory.includes(`${radio.name}`)}
                  */ onChange={() => {
                   if (productCategory.includes(`${radio.name}`)) {
+                    setProductCategory([]);
                     setProductCategory((o) => o.filter((category) => category != `${radio.name}`));
                   } else {
+                    setProductCategory([]);
                     setProductCategory((o) => o.concat(`${radio.name}`));
                   }
                 }}
@@ -108,7 +110,7 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
           <p className="text-base">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
           <div className="flex flex-row justify-center items-center gap-4 my-6">
-            <p className="text-2xl w-40px">+{count}</p>
+            <p className="text-2xl w-50px">+{count}</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="73" viewBox="0 0 72 73" fill="none">
               <path
                 fill-rule="evenodd"
@@ -125,7 +127,7 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
               type="primary"
               className="text-base bg-matas-blue rounded shadow-matas-blue"
               onClick={() => {
-                handleCancel();
+                handleResult();
 
                 setTimeout(() => {
                   setPageView((page) => {

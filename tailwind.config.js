@@ -15,6 +15,9 @@ module.exports = {
       aspectRatio: {
         "4/1": "4 / 1",
       },
+      width: {
+        "40px": "40px",
+      },
     },
   },
   plugins: [],

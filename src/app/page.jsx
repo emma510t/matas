@@ -24,7 +24,6 @@ export default function Home() {
           },
         }}
       >
-        <Header />
         <main className="bg-matas-white">
           <ProductView id="overview" />
         </main>

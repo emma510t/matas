@@ -46,3 +46,7 @@
   max-width: 100%;
   height: 100%;
 }
+
+.checked {
+  background-color: #284461;
+}

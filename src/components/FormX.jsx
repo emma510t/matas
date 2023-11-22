@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Checkbox, Radio, Button } from "antd";
 
-export default function FormX({ percent, productTypes, setProductTypes, productTypeError, productCategory, setProductCategory, resultArray, setPageView, handleCancel }) {
+export default function FormX({
+  percent,
+  productTypes,
+  setProductTypes,
+  productTypeError,
+  productCategory,
+  setProductCategory,
+  resultArray,
+  setPageView,
+  handleCancel,
+}) {
   const [count, setCount] = useState(0);
   useEffect(() => {
     let intervalId;
@@ -53,7 +63,9 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter</p>
+          <p className="font-semibold text-xl mb-2 leading-5">
+            Jeg leder efter
+          </p>
           <p className={productTypeError + " text-xs"}>Vælg 1 og maks. 3</p>
           <div className="flex flex-col mt-2 gap-2">
             {checkboxArray.map((box) => (
@@ -63,7 +75,9 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
                 checked={productTypes.includes(`${box.name}`)}
                 onChange={() => {
                   if (productTypes.includes(`${box.name}`)) {
-                    setProductTypes((o) => o.filter((product) => product != `${box.name}`));
+                    setProductTypes((o) =>
+                      o.filter((product) => product != `${box.name}`)
+                    );
                   } else {
                     setProductTypes((o) => o.concat(`${box.name}`));
                   }
@@ -79,18 +93,29 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
       return (
         <>
           <p className="uppercase text-xs leading-7">Hudpleje</p>
-          <p className="font-semibold text-xl mb-2 leading-5">Jeg leder efter et produkt i</p>
+          <p className="font-semibold text-xl mb-2 leading-5">
+            Jeg leder efter et produkt i
+          </p>
           <p className={productTypeError + " text-xs"}>Vælg 1</p>
-          <Radio.Group buttonStyle="solid" className="grid grid-cols-2 gap-1.5 mt-2">
+          <Radio.Group
+            buttonStyle="solid"
+            className="grid grid-cols-2 gap-1.5 mt-2"
+          >
             {radioArray.map((radio) => (
               <Radio.Button
                 key={radio.name}
                 value={radio.name}
-                className="flex justify-center items-center text-base rounded"
-                /*                 checked={productCategory.includes(`${radio.name}`)}
-                 */ onChange={() => {
+                className={`flex justify-center items-center text-base rounded ${
+                  productCategory.includes(radio.name)
+                    ? "checked text-matas-white"
+                    : ""
+                }`}
+                checked={productCategory.includes(`${radio.name}`)}
+                onChange={() => {
                   if (productCategory.includes(`${radio.name}`)) {
-                    setProductCategory((o) => o.filter((category) => category != `${radio.name}`));
+                    setProductCategory((o) =>
+                      o.filter((category) => category != `${radio.name}`)
+                    );
                   } else {
                     setProductCategory((o) => o.concat(`${radio.name}`));
                   }
@@ -106,10 +131,19 @@ export default function FormX({ percent, productTypes, setProductTypes, productT
       return (
         <>
           <p className="font-semibold text-xl mb-2">Materialistens tip</p>
-          <p className="text-base">Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk hudpleje, hårpleje og make-up.</p>
+          <p className="text-base">
+            Kig efter ECOCERT-mærket, hvis du leder efter certificeret økologisk
+            hudpleje, hårpleje og make-up.
+          </p>
           <div className="flex flex-row justify-center items-center gap-4 my-6">
             <p className="text-2xl w-40px">+{count}</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="73" viewBox="0 0 72 73" fill="none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="72"
+              height="73"
+              viewBox="0 0 72 73"
+              fill="none"
+            >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"

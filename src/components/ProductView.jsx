@@ -74,7 +74,16 @@ function ProductView() {
             <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
           </svg>
         </Button>
-        <section className="layoutView">
+        <section className="layoutView mt-6">
+          <div className="flex flex-row gap-4 pb-6">
+            {resultArray.map((pill) => {
+              return (
+                <div key={pill} className="border-matas-blue border border-solid px-2 py-0.5 rounded-full text-sm text-matas-blue">
+                  {pill}
+                </div>
+              );
+            })}
+          </div>
           <div className="grid-cols-3 grid gap-3">
             {products
               .filter((data) => {
@@ -84,10 +93,10 @@ function ProductView() {
               })
               .map((data) => (
                 <ProductCardX image={data.image} key={data.id}>
-                  <div className="flex flex-col items-center">
-                    <p className="font-bold text-lg">{data.name}</p>
+                  <div className="flex flex-col">
                     <p className="text-xs">{data.brand}</p>
-                    <p className="text-xs">{data.price}</p>
+                    <p className="font-bold text-base text-matas-grey">{data.name}</p>
+                    <p className="font-bold text-lg">{data.price}</p>
                   </div>
                 </ProductCardX>
               ))}

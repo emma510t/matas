@@ -11,6 +11,7 @@ export default function FormX({
   resultArray,
   setPageView,
   handleCancel,
+  handleResult,
 }) {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -113,10 +114,12 @@ export default function FormX({
                 checked={productCategory.includes(`${radio.name}`)}
                 onChange={() => {
                   if (productCategory.includes(`${radio.name}`)) {
+                    setProductCategory([]);
                     setProductCategory((o) =>
                       o.filter((category) => category != `${radio.name}`)
                     );
                   } else {
+                    setProductCategory([]);
                     setProductCategory((o) => o.concat(`${radio.name}`));
                   }
                 }}
@@ -136,7 +139,7 @@ export default function FormX({
             hudpleje, hårpleje og make-up.
           </p>
           <div className="flex flex-row justify-center items-center gap-4 my-6">
-            <p className="text-2xl w-40px">+{count}</p>
+            <p className="text-2xl w-50px">+{count}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="72"
@@ -159,7 +162,7 @@ export default function FormX({
               type="primary"
               className="text-base bg-matas-blue rounded shadow-matas-blue"
               onClick={() => {
-                handleCancel();
+                handleResult();
 
                 setTimeout(() => {
                   setPageView((page) => {

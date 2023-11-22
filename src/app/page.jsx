@@ -23,7 +23,7 @@ export default function Home() {
           },
         }}
       >
-        <main className="bg-matas-white">
+        <main>
           <ProductView id="overview" />
         </main>
       </ConfigProvider>

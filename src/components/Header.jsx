@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Menu, SubMenu, Item } from "burger-menu";
+import { Divider } from "antd";
 import "burger-menu/lib/index.css";
 
 function Header() {
@@ -68,17 +69,20 @@ function Header() {
           <Item itemKey={"krop"} text={"Kropspleje"}></Item>
           <Item itemKey={"gave"} text={"Gaveæsker"}></Item>
         </SubMenu>
+        <Divider style={{ height: 1 }} className="bg-matas-blue" />
         <Item
           icon={
             <img
-              className="w-16"
+              className="w-16 rounded"
               src="/img/oekologisk-hudpleje.jpg"
               alt="woman"
             />
           }
           itemKey={"quiz"}
           text={"Hudpleje: Tag testen"}
-        ></Item>
+        >
+          <p>hejsa</p>
+        </Item>
       </Menu>
     </header>
   );

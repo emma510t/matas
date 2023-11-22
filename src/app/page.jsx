@@ -25,7 +25,7 @@ export default function Home() {
         }}
       >
         <Header />
-        <main className="bg-matas-white">
+        <main className="bg-matas-white py-6">
           <ProductView id="overview" />
         </main>
       </ConfigProvider>

@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       "matas-blue": "#002643",
       "matas-white": "#F7F5F5",
+      "matas-grey": "#75787B",
       white: "#ffffff",
     },
     extend: {

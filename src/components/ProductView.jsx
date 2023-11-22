@@ -28,7 +28,7 @@ function ProductView() {
   }, []);
   if (pageView === 1) {
     return (
-      <section className="layoutView bg-matas-white py-8">
+      <section className="layoutView">
         <div className="grid-cols-3 grid gap-3">
           <CardX name="/img/oekologisk-hudpleje.jpg">
             <div className="flex flex-col items-center">
@@ -70,16 +70,27 @@ function ProductView() {
             });
           }}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
           </svg>
         </Button>
-        <section className="layoutView bg-matas-white">
+        <section className="layoutView">
           <div className="grid-cols-3 grid gap-3">
             {products
               .filter((data) => {
                 const formMatches = productTypes.some((r) => r === data.form);
-                const categoryMatches = productCategory.some((r) => r === data.category);
+                const categoryMatches = productCategory.some(
+                  (r) => r === data.category
+                );
                 return formMatches && categoryMatches; // Check for both form and category match
               })
               .map((data) => (

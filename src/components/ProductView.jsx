@@ -32,8 +32,10 @@ function ProductView() {
         <div className="grid-cols-2 md:grid-cols-3 grid gap-3">
           <CardX name="/img/oekologisk-hudpleje.jpg">
             <div className="flex flex-col items-center">
-              <p className="text-xs">FIND DIN FAVORIT</p>
-              <p className="font-bold text-lg">Økologisk hudpleje</p>
+              <p className="text-xs pb-1">FIND DIN FAVORIT</p>
+              <p className="font-bold text-lg text-center">
+                Økologisk hudpleje
+              </p>
             </div>
             <ModalX
               productTypes={productTypes}
@@ -48,10 +50,10 @@ function ProductView() {
             <ProductCardX image={data.image} key={data.id}>
               <div className="flex flex-col">
                 <p className="text-xs">{data.brand}</p>
-                <p className="font-bold text-base text-matas-grey">
+                <p className="font-bold text-sm md:text-base text-matas-grey">
                   {data.name}
                 </p>
-                <p className="font-bold text-lg">{data.price}</p>
+                <p className="font-bold text-base md:text-lg">{data.price}</p>
               </div>
             </ProductCardX>
           ))}
@@ -112,10 +114,10 @@ function ProductView() {
                 <ProductCardX image={data.image} key={data.id}>
                   <div className="flex flex-col">
                     <p className="text-xs">{data.brand}</p>
-                    <p className="font-bold text-base text-matas-grey">
+                    <p className="font-bold test-sm md:text-base text-matas-grey">
                       {data.name}
                     </p>
-                    <p className="font-bold text-lg">{data.price}</p>
+                    <p className="font-bold text-md md:text-lg">{data.price}</p>
                   </div>
                 </ProductCardX>
               ))}

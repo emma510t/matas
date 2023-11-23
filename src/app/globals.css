@@ -53,11 +53,24 @@
   cursor: pointer;
 }
 .body_height > .ant-card-body {
+  padding: 12px;
   height: 176px;
 }
+.testbody_height > .ant-card-body {
+  padding: 26px 24px 12px 24px;
+  height: 176px;
+}
+
 @media (min-width: 768px) {
   .body_height > .ant-card-body {
     height: 240px;
+    padding: 24px;
+  }
+  .testbody_height > .ant-card-body {
+    padding: 24px;
+    height: 240px;
+    display: grid;
+    place-content: center;
   }
 }
 

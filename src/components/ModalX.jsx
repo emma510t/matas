@@ -76,7 +76,7 @@ export default function ModalX({ setPageView, resultArray, productTypes, product
         ]}
       >
         <div className="w-full aspect-[4/1] bg-matas-blue overflow-hidden">
-          <img className="object-cover block" src="/img/oekologisk-hudpleje.jpg"></img>
+          <img className="object-cover block" src="/img/matas_striber.webp"></img>
         </div>
         <div
           style={{

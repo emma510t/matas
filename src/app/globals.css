@@ -54,3 +54,8 @@
 .menu_btn {
   cursor: pointer;
 }
+
+.full-width {
+  margin: -20px -24px 0;
+  max-width: 520px;
+}

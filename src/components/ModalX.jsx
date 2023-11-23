@@ -58,6 +58,19 @@ export default function ModalX({ setPageView, resultArray, productTypes, product
         </Button>
       </div>
       <Modal
+        className="overflow-hidden"
+        closeIcon={
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_421_5767)">
+              <path d="M6 6L18 18M6 18L18 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_421_5767">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        }
         open={open}
         onCancel={handleCancel}
         footer={[
@@ -75,15 +88,14 @@ export default function ModalX({ setPageView, resultArray, productTypes, product
           </div>,
         ]}
       >
-        <div className="w-full aspect-[4/1] bg-matas-blue overflow-hidden">
-          <img className="object-cover block" src="/img/matas_striber.webp"></img>
-        </div>
+        <img className="block full-width" src="/img/matas_striber.webp"></img>
+
         <div
           style={{
             marginBottom: 10,
           }}
         >
-          <Progress className="pt-7" percent={percent} />
+          <Progress className="pt-4" percent={percent} />
         </div>
         <FormX
           percent={percent}

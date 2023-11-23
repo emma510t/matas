@@ -4,12 +4,10 @@ import { Card, Button } from "antd";
 export default function ProductCardX({ children, image }) {
   return (
     <Card
-      className="rounded-lg"
+      className="w-44 md:w-60 rounded-lg body_height"
       hoverable
-      style={{ width: 240 }}
-      bodyStyle={{ height: 240 }}
       cover={
-        <div id="image_container">
+        <div id="image_container" className="h-44 md:h-60">
           <img src={image} className="rounded-t-lg" id="rounded" />
         </div>
       }
@@ -20,7 +18,7 @@ export default function ProductCardX({ children, image }) {
           className="flex flex-row items-center gap-2 bg-matas-blue rounded mt-auto justify-self-end justify-center"
           type="primary"
         >
-          Læg i kurv{" "}
+          Læg i kurv
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1rem"
